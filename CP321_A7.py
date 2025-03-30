@@ -7,8 +7,6 @@ Original file is located at
     https://colab.research.google.com/drive/1Tu__neQ75DvqVKVc9HmNmlK4IDIT98Y6
 """
 
-!pip install dash
-
 import dash
 from dash import Dash, html, dcc, callback, Output, Input, dash_table
 import plotly.express as px
