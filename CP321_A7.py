@@ -31,7 +31,7 @@ df = pd.DataFrame({
 year_winners = {year: country for country, years in zip(df["country"], df["years"]) for year in years}
 
 
-app = Dash()
+app = Dash(__name__)
 server = app.server
 
 app.layout = html.Div([
@@ -90,6 +90,6 @@ def update_graph(selected_country, selected_year):
 
     return fig, country_output, year_output
 
-if __name__ == '__main__':
-    app.run(debug=True)
+if __name__ == "__main__":
+    app.run_server(debug=False)
 
